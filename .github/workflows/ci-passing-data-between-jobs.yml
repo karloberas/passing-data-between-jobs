@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Generate output
         id: result
-        run: echo "::set-output name=data::$(date +%s)"
+        run: echo "date=$(date +%s)" >> $GITHUB_OUTPUT
 
   job2:
     runs-on: ubuntu-latest
