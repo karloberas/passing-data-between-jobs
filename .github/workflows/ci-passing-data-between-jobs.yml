@@ -6,7 +6,7 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     outputs:
-      result: ${{ steps.result.outputs.data }}
+      result: ${{ steps.result.outputs.date }}
     steps:
       - name: Generate output
         id: result
